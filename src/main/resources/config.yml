@@ -1,0 +1,56 @@
+gui-rows: 6
+gui-title: "&eSpawner Shop"
+shop-sound: "BLOCK_CHEST_OPEN"
+status-locked: "&c&lLOCKED"
+status-unlocked: "&a&lUNLOCKED"
+progress-bar: "::"
+progress-filled: "&a&l"
+progress-missing: "&c&l"
+kill-format: "&a%current%&7/%total%"
+kill-completed: "&a&lCOMPLETED"
+full-inventory: "&cYour inventory is full!"
+spawner-purchased: "&aYou have successfully purchased the %type% Spawner."
+spawner-locked: "&cYou do not have %type% Spawner unlocked yet."
+spawner-unlocked: "&aYou got enough kills and unlocked the %type% Spawner."
+no-money: "&cYou don't have enough money to purchase that spawner!"
+gui-spawners:
+  '1':
+    name: "&2&lZombie Spawner"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTZmYzg1NGJiODRjZjRiNzY5NzI5Nzk3M2UwMmI3OWJjMTA2OTg0NjBiNTFhNjM5YzYwZTVlNDE3NzM0ZTExIn19fQ=="
+    lore:
+      - "&7Price: &a%cost%"
+      - "&7Bar: %bar%"
+      - "&7Progress: &a%progress%%"
+      - "&7Status: %status%"
+      - "&7Kills: %kills%"
+    type: ZOMBIE
+    cost: 5000
+    requirements: []
+  '2':
+    name: "&f&lSkeleton Spawner"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzAxMjY4ZTljNDkyZGExZjBkODgyNzFjYjQ5MmE0YjMwMjM5NWY1MTVhN2JiZjc3ZjRhMjBiOTVmYzAyZWIyIn19fQ=="
+    lore:
+      - "&7Price: &a%cost%"
+      - "&7Bar: %bar%"
+      - "&7Progress: &a%progress%%"
+      - "&7Status: %status%"
+      - "&7Kills: %kills%"
+    type: SKELETON
+    cost: 10000
+    requirements:
+        type: ZOMBIE
+        amount: 10
+  '3':
+    name: "&7&lSpider Spawner"
+    texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2Q1NDE1NDFkYWFmZjUwODk2Y2QyNThiZGJkZDRjZjgwYzNiYTgxNjczNTcyNjA3OGJmZTM5MzkyN2U1N2YxIn19fQ=="
+    lore:
+      - "&7Price: &a%cost%"
+      - "&7Bar: %bar%"
+      - "&7Progress: &a%progress%%"
+      - "&7Status: %status%"
+      - "&7Kills: %kills%"
+    type: SPIDER
+    cost: 15000
+    requirements:
+      type: SKELETON
+      amount: 25

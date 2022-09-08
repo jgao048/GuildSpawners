@@ -1,0 +1,9 @@
+name: GuildSpawners
+version: ${project.version}
+main: dev.failures.guildspawners.GuildSpawners
+api-version: 1.16
+depend: [ Vault, Guilds ]
+commands:
+  spawnershop:
+    description: Opens shop for all spawners
+    aliases: [ss,spawners]
